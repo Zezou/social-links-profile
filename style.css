@@ -91,6 +91,9 @@ body {
 .card-link:hover {
   background: var(--green);
   color: var(--grey900);
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;  
 }
 
 .user-name {
