@@ -88,6 +88,11 @@ body {
   width: 16rem;
 }
 
+.card-link:hover {
+  background: var(--green);
+  color: var(--grey900);
+}
+
 .user-name {
   font-size: 1rem;
 }
