@@ -21,10 +21,10 @@
   font-weight: 600;
   font-style: normal;
 }
-.inter-700 {
+.inter-800 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -32,6 +32,23 @@ body {
   background: var(--grey900);
   font-size: 0.8rem;
   color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:active,
+a:link,
+a:focus,
+a:visited {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--grey900);
 }
 
 .attribution {
@@ -43,9 +60,12 @@ body {
 }
 
 .container {
+  /* display: flex;
+  justify-content: center; */
   display: flex;
+  align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .card {
@@ -75,25 +95,28 @@ body {
 
 .card-links {
   padding-top: 1rem;
+  padding-right: 2rem;
 }
 .card-link {
   background: var(--grey700);
   border-radius: 0.5rem;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center
   width: 10rem;
   height: 2rem;
-  text-align: center;
   padding: 0;
   padding-top: 0.8rem;
   margin-top: 0.8rem;
   width: 16rem;
 }
 
+.card-link:hover a,
 .card-link:hover {
   background: var(--green);
   color: var(--grey900);
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;  
 }
 
 .user-name {
@@ -108,4 +131,5 @@ body {
 
 .user-quote {
   font-size: 12px;
+  /* text-align: center; */
 }
